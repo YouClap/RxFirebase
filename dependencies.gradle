@@ -3,12 +3,12 @@ ext {
 
     autoValueVersion = '1.5'
     assertjVersion = '1.2.0'
-    firebaseVersion = '11.8.0'
     junitVersion = '4.12'
-    kotlinVersion = '1.2.21'
+    kotlinVersion = '1.2.31'
     mockitoVersion = "2.13.0"
     mockitoKotlinVersion = "1.5.0"
-    rxJavaVersion = '2.1.8'
+    rxJavaVersion = '2.1.12'
+    firebaseVersion = '12.0.0'
 
     // Build plugins
 
