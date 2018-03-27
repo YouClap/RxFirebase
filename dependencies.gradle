@@ -12,11 +12,11 @@ ext {
 
     // Build plugins
 
-    androidPluginVersion = '3.0.1'
+    androidPluginVersion = '3.1.0'
 
     // Build SDK versions
 
-    buildToolsVersion = '27.0.1'
+    buildToolsVersion = '27.0.3'
     minSdkVersion = 14
     compileSdkVersion = 27
 
