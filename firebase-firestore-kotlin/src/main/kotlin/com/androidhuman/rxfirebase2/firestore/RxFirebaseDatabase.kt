@@ -2,10 +2,7 @@
 
 package com.androidhuman.rxfirebase2.firestore
 
-import com.google.firebase.firestore.CollectionReference
-import com.google.firebase.firestore.DocumentReference
-import com.google.firebase.firestore.DocumentSnapshot
-import com.google.firebase.firestore.SetOptions
+import com.google.firebase.firestore.*
 import io.reactivex.Completable
 import io.reactivex.Observable
 import io.reactivex.Single
@@ -39,4 +36,11 @@ inline fun DocumentReference.rxGet()
 
 inline fun DocumentReference.rxGetChanges()
         : Observable<DocumentSnapshot> = RxFirebaseFirestore.getDocumentChanges(this)
+
+inline fun Query.rxGet()
+        : Single<QuerySnapshot> = RxFirebaseFirestore.query(this)
+
+inline fun Query.rxGetChanges()
+        : Observable<QuerySnapshot> = RxFirebaseFirestore.queryChanges(this)
+
 

@@ -6,6 +6,8 @@ import android.support.annotation.NonNull;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.SetOptions;
 
 import java.util.Map;
@@ -30,6 +32,18 @@ public final class RxFirebaseFirestore {
     @CheckResult
     public static Observable<DocumentSnapshot> getDocumentChanges(@NonNull DocumentReference ref) {
         return new DocumentChangesObserver(ref);
+    }
+
+    @NonNull
+    @CheckResult
+    public static Single<QuerySnapshot> query(@NonNull Query query) {
+        return new QueryObserver(query);
+    }
+
+    @NonNull
+    @CheckResult
+    public static Observable<QuerySnapshot> queryChanges(@NonNull Query query) {
+        return new QueryChangesObserver(query);
     }
 
     @NonNull
