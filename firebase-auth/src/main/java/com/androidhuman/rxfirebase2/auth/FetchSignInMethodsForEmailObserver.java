@@ -1,6 +1,6 @@
 package com.androidhuman.rxfirebase2.auth;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.androidhuman.rxfirebase2.auth.core.OnCompleteDisposable;
 import com.google.android.gms.tasks.Task;

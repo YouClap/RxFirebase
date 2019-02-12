@@ -1,7 +1,7 @@
 package com.androidhuman.rxfirebase2.storage;
 
 import android.net.Uri;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.androidhuman.rxfirebase2.storage.core.OnCompleteDisposable;
 import com.google.android.gms.tasks.Task;

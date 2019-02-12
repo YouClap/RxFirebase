@@ -4,7 +4,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import com.androidhuman.rxfirebase2.auth.core.SimpleDisposable;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;

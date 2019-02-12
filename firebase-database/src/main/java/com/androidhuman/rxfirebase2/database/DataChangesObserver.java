@@ -1,14 +1,12 @@
 package com.androidhuman.rxfirebase2.database;
 
+import com.androidhuman.rxfirebase2.database.core.SimpleDisposable;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.ValueEventListener;
 
-import com.androidhuman.rxfirebase2.database.core.SimpleDisposable;
-
-import android.support.annotation.NonNull;
-
+import androidx.annotation.NonNull;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 
@@ -35,7 +33,7 @@ final class DataChangesObserver extends Observable<DataSnapshot> {
         private final Observer<? super DataSnapshot> observer;
 
         Listener(@NonNull DatabaseReference ref,
-                @NonNull Observer<? super DataSnapshot> observer) {
+                 @NonNull Observer<? super DataSnapshot> observer) {
             this.ref = ref;
             this.observer = observer;
         }

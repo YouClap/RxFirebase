@@ -7,7 +7,7 @@ import com.google.firebase.database.Query;
 
 import com.androidhuman.rxfirebase2.database.core.SimpleDisposable;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
