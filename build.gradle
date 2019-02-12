@@ -12,6 +12,7 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:${androidPluginVersion}"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}"
+        classpath "com.github.ben-manes:gradle-versions-plugin:0.20.0"
     }
 }
 
