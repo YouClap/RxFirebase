@@ -1,6 +1,6 @@
 package com.androidhuman.rxfirebase2.firestore;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.androidhuman.rxfirebase2.firestore.core.SimpleDisposable;
 import com.google.firebase.firestore.DocumentReference;

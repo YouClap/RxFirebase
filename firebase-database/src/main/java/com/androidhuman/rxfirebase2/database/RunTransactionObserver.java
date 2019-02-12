@@ -8,7 +8,7 @@ import com.google.firebase.database.Transaction;
 
 import com.androidhuman.rxfirebase2.database.core.SimpleDisposable;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import io.reactivex.Completable;
 import io.reactivex.CompletableObserver;
